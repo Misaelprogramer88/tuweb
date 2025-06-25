@@ -35,6 +35,7 @@
 /* Navbar fijo arriba, para que no tape contenido */
 body {
   padding-top: 70px; /* espacio para navbar fixed */
+  
 }
 
 /* Para fondo oscuro cuando haces scroll (opcional) */
@@ -96,7 +97,7 @@ body {
 /* Para que la tipografía general del body sea consistente */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0e0e0e, #1a1a1a);
+  background: linear-gradient(135deg, #0e0e0e, #1b1c24, #202d4e, #082b85);
   color: white;
   min-height: 100vh;
   margin: 0;
@@ -151,4 +152,55 @@ section {
   background-color: #00000000;
 }
 
+
+/* Fondo animadoo*/
+
+.animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    width: 2px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.1);
+    animation: moveDiagonal 6s linear infinite;
+}
+
+.line:nth-child(1) { left: 10%; animation-delay: 0s; }
+.line:nth-child(2) { left: 30%; animation-delay: 1s; }
+.line:nth-child(3) { left: 50%; animation-delay: 2s; }
+.line:nth-child(4) { left: 70%; animation-delay: 3s; }
+.line:nth-child(5) { left: 90%; animation-delay: 4s; }
+
+.dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: blink 3s infinite ease-in-out;
+}
+
+.dot:nth-child(6) { top: 20%; left: 40%; animation-delay: 0s; }
+.dot:nth-child(7) { top: 50%; left: 60%; animation-delay: 1s; }
+.dot:nth-child(8) { top: 70%; left: 20%; animation-delay: 2s; }
+.dot:nth-child(9) { top: 80%; left: 80%; animation-delay: 3s; }
+.dot:nth-child(10) { top: 30%; left: 10%; animation-delay: 4s; }
+
+@keyframes moveDiagonal {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
 
