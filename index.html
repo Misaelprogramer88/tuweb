@@ -16,6 +16,125 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 
+ <style>
+#nosotros {
+  background: transparent;
+  padding: 60px 0;
+}
+
+.floating-box {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 950px;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.05);
+  color: #ddd;
+  text-align: center;
+}
+
+.floating-box h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00ffff;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.floating-box h2::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: #00ffff;
+  display: block;
+  margin: 0.5rem auto 1.5rem;
+  border-radius: 3px;
+}
+
+.floating-box p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #cccccc;
+}
+
+#nosotros .section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #00ffff;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+#nosotros .section-title::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: #00ffff;
+  display: block;
+  margin: 0.5rem auto 1.5rem;
+  border-radius: 3px;
+}
+
+#nosotros p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  line-height: 1.9;
+  max-width: 850px;
+  margin: 0 auto 1rem;
+}
+
+.decor-icon {
+  font-size: 5rem;
+  color: rgba(0, 255, 255, 0.05);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+
+.btn-tech {
+  display: inline-block;
+  padding: 10px 25px;
+  background: transparent;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-size: 10;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-tech::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #00ffff;
+  opacity: 0.1;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.btn-tech:hover {
+  color: #000;
+  background: #00ffff;
+}
+
+.btn-tech:hover::before {
+  left: 0;
+}
+
+
+ </style>
+
 </head>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top custom-navbar">
   <div class="container">
@@ -83,38 +202,64 @@
   </div>
 </section>
 
-<!-- Sección 2 -->
-<section class="seccion-slide seccion-extra">
-  <div class="container">
-    <div class="contenido-interno text-center py-5" data-aos="fade-up" data-aos-delay="500">
-      <h2>¿Qué ofrecemos?</h2>
-      <p>Sitios web personalizados, tiendas en línea, portafolios, páginas para cursos y más.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas pariatur quod est atque, in iusto quaerat id enim ducimus quasi culpa, voluptatem architecto sed asperiores numquam rerum a accusamus nostrum!</p>
+<section id="nosotros" class="position-relative py-5">
+  <div class="floating-box" data-aos="fade-up">
+    <h2 class="section-title">Sobre Nosotros</h2>
+    <p class="lead">
+      En <strong>TuWeb</strong> nos especializamos en crear páginas web modernas, rápidas y completamente personalizadas para cada negocio.
+    </p>
+    <p>
+      Nos enfocamos en ayudar a <strong>pequeñas empresas</strong> que desean crecer en internet y atraer a más clientes.
+      Creemos que una página web no tiene que ser costosa ni complicada. Lo más importante es que sea <strong>clara, funcional</strong> y adaptada a las necesidades reales de tu negocio. 
+    </p>
+    <p>
+      Nuestro objetivo es ayudarte a tener una presencia digital sólida y profesional, con herramientas que comuniquen el valor de tu marca de forma efectiva.
+    </p>
+  </div>
+</section>
+
+
+<section id="que-ofrecemos" class="position-relative py-5">
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="section-title">¿Qué ofrecemos?</h2>
+    <div class="row justify-content-center mt-4">
+      <!-- Servicio 1 -->
+      <div class="col-md-5 mb-4">
+        <div class="floating-box h-100 d-flex flex-column justify-content-between">
+          <div>
+            <i class="bi bi-window-desktop" style="font-size: 2.5rem; color: #00ffff;"></i>
+            <h5 class="mt-3">Páginas Web Personalizadas</h5>
+            <p>
+              Creamos sitios web informativos, modernos y rápidos, totalmente adaptados a las necesidades de tu negocio. Cada página es única, funcional y pensada para ayudarte a crecer.
+            </p>
+          </div>
+          <a href="#contacto" class="btn-tech mt-3">Solicitar página</a>
+        </div>
+      </div>
+      <!-- Servicio 2 -->
+      <div class="col-md-5 mb-4">
+        <div class="floating-box h-100 d-flex flex-column justify-content-between">
+          <div>
+            <i class="bi bi-palette" style="font-size: 2.5rem; color: #00ffff;"></i>
+            <h5 class="mt-3">Diseño de Logo e Imagen</h5>
+            <p>
+              Diseñamos logotipos originales e imagen publicitaria para redes y medios impresos, reflejando la esencia de tu marca de manera visual, clara y profesional.
+            </p>
+          </div>
+          <a href="#contacto" class="btn-tech mt-3">Solicitar diseño</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Sección 3 -->
-<section class="seccion-slide seccion-extra">
-  <div class="container">
-    <div class="contenido-interno text-center py-5">
-      <h2>¿Qué ofrecemos?</h2>
-      <p>Sitios web personalizados, tiendas en línea, portafolios, páginas para cursos y más.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas pariatur quod est atque, in iusto quaerat id enim ducimus quasi culpa, voluptatem architecto sed asperiores numquam rerum a accusamus nostrum!</p>
-    </div>
-  </div>
-</section>
 
-<!-- Sección 4 -->
-<section class="seccion-slide seccion-extra">
-  <div class="container">
-    <div class="contenido-interno text-center py-5">
-      <h2>¿Qué ofrecemos?</h2>
-      <p>Sitios web personalizados, tiendas en línea, portafolios, páginas para cursos y más.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas pariatur quod est atque, in iusto quaerat id enim ducimus quasi culpa, voluptatem architecto sed asperiores numquam rerum a accusamus nostrum!</p>
-    </div>
-  </div>
-</section>
+
+
+<footer class="text-center py-4 mt-5" style="color: #ccc; background-color: rgba(255,255,255,0.05);">
+  <p>&copy; 2025 TuWeb. Desarrollado por Paulina Salas.</p>
+</footer>
+
 
 
 
@@ -145,44 +290,7 @@ secciones.forEach((section, i) => {
   // Seleccionamos el contenido interno de la sección actual
   const contenido = section.querySelector(".contenido-interno");
 
-  // Animación para mover toda la sección hacia arriba al hacer scroll
-  gsap.to(section, {
-    y: "-100%", // Mover hacia arriba 100% de su altura
-    ease: "power1.inOut", // Suavizado de la animación
-    scrollTrigger: {
-      trigger: section, // La sección que dispara la animación
-      start: "top top",  // Cuando el top de la sección alcance el top del viewport
-      end: "bottom top", // Hasta que el bottom de la sección alcance el top del viewport
-      scrub: true,       // Sincroniza la animación con el scroll (smooth)
-      snap: {            // Configuración para que el scroll "enganche" secciones
-        snapTo: 1 / (secciones.length - 1), // Divide el scroll en partes iguales según número de secciones
-        duration: 0.4,   // Duración rápida para el snap (en segundos)
-        delay: 0,        // Sin demora antes del snap
-        ease: "power1.inOut" // Efecto de suavizado al hacer snap
-      }
-    }
-  });
 
-  // Animación para escalar verticalmente el contenido interno mientras hacemos scroll
-  gsap.to(contenido, {
-    scaleY: 2.5,           // Escala vertical 2.5 veces
-    transformOrigin: "top center", // Punto de origen de la escala (arriba centro)
-    ease: "power1.inOut",
-    scrollTrigger: {
-      trigger: section,
-      start: "top top",
-      end: "bottom top",
-      scrub: true,
-      // Al salir de la sección (scroll hacia abajo), vuelve la escala a 1 rápido
-      onLeave: () => {
-        gsap.to(contenido, { scaleY: 1, duration: 0.2, ease: "power2.out" });
-      },
-      // Al volver hacia atrás (scroll hacia arriba), también vuelve la escala a 1
-      onLeaveBack: () => {
-        gsap.to(contenido, { scaleY: 1, duration: 0.2, ease: "power2.out" });
-      }
-    }
-  });
 
 });
 
