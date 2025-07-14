@@ -135,6 +135,8 @@ body {
   will-change: transform;
 }
 
+
+
 #nosotros {
   background: transparent;
   padding: 60px 0;
@@ -145,8 +147,8 @@ body {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 20px;
-  padding: 40px;
-  max-width: 900px;
+  padding: 50px;
+  max-width: 950px;
   margin: 0 auto;
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.05);
   color: #ddd;
@@ -176,7 +178,6 @@ body {
   line-height: 1.8;
   color: #cccccc;
 }
-
 
 #nosotros .section-title {
   font-size: 2.8rem;
@@ -213,7 +214,6 @@ body {
   left: 20px;
   z-index: 0;
 }
-
 
 
 /* Para visualizar mejor */
