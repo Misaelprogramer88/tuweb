@@ -95,42 +95,7 @@
   z-index: 0;
 }
 
-.btn-tech {
-  display: inline-block;
-  padding: 10px 25px;
-  background: transparent;
-  border: 2px solid #00ffff;
-  color: #00ffff;
-  font-size: 10;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
 
-.btn-tech::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: #00ffff;
-  opacity: 0.1;
-  transition: all 0.3s ease;
-  z-index: -1;
-}
-
-.btn-tech:hover {
-  color: #000;
-  background: #00ffff;
-}
-
-.btn-tech:hover::before {
-  left: 0;
-}
 
 
  </style>
@@ -188,9 +153,9 @@
       <div class="row align-items-center">
         <!-- Izquierda -->
         <div class="col-12 col-md-6 hero-left">
-          <h1 data-aos="fade-right" data-aos-delay="300">Creemos páginas web</h1>
-          <p data-aos="fade-right" data-aos-delay="700">Diseñamos sitios modernos, rápidos y orientados a tus resultados.</p>
-          <button data-aos="fade-right" data-aos-delay="1100">Ver ejemplos</button>
+          <h1 data-aos="fade-right" data-aos-delay="300">Impulsa tu negocio con una página web profesional</h1>
+          <p data-aos="fade-right" data-aos-delay="700">Creamos sitios modernos, rápidos y adaptados a tus necesidades. Sin complicaciones ni costos exagerados.</p>
+          <button data-aos="fade-right" data-aos-delay="1100" class="btn-tech mt-3">Solicita la tuya</button>
         </div>
 
         <!-- Derecha -->
@@ -253,14 +218,66 @@
   </div>
 </section>
 
+<section id="contacto" class="position-relative py-5">
+  <div class="container">
+    <div class="floating-box text-center" data-aos="fade-up">
+      <h2 class="section-title">Contacto</h2>
+      <p class="mb-4">¿Listo para llevar tu negocio al siguiente nivel? Escríbenos y te ayudamos a empezar.</p>
+      
+      <form class="text-start" onsubmit="return enviarPorWhatsApp();">
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input type="text" id="nombre" class="form-control contact-input" placeholder="Tu nombre" required>
+    </div>
+    <div class="col-md-6">
+      <input type="email" id="correo" class="form-control contact-input" placeholder="Correo electrónico">
+    </div>
+  </div>
+  <div class="mb-3">
+    <textarea id="mensaje" class="form-control contact-input" rows="4" placeholder="Tu mensaje..." required></textarea>
+  </div>
+  <div class="text-center">
+    <button class="btn-tech" type="submit">Enviar por WhatsApp</button>
+  </div>
+</form>
+
+
+      <div class="mt-4 social-icons">
+        <a href="https://wa.me/5210000000000" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://instagram.com/tuweb" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="mailto:contacto@tuweb.com"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
 
 <footer class="text-center py-4 mt-5" style="color: #ccc; background-color: rgba(255,255,255,0.05);">
-  <p>&copy; 2025 TuWeb. Desarrollado por Paulina Salas.</p>
+  <p>&copy; 2025 TuWeb. Desarrollado por TuWeb</p>
 </footer>
 
 
+
+
+<!--Enviar el mensaje por whatsapp  :D-->
+  <script>
+  function enviarPorWhatsApp() {
+    const nombre = document.getElementById("nombre").value;
+    const correo = document.getElementById("correo").value;
+    const mensaje = document.getElementById("mensaje").value;
+
+    const numero = "5218441968126"; 
+   const texto = `Hola, soy ${nombre}. Mi correo es ${correo}\n${mensaje}`;
+   const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+
+    window.open(url, "_blank");
+    return false; 
+  }
+</script>
 
 
   <script>
