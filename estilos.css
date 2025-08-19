@@ -1,7 +1,8 @@
 
+/* ESTILOS DEL INDEX */
 .custom-navbar {
   background-color: transparent !important;
-  border-bottom: 1px solid #00ffff88; /* línea inferior cyan translúcida */
+  border-bottom: 1px solid #61befc; /* línea inferior cyan translúcida */
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-weight: 600;
@@ -29,7 +30,7 @@
 }
 
 .custom-navbar .nav-link:hover {
-  color: #00ffff;
+  color: #61befc;
 }
 
 /* Navbar fijo arriba, para que no tape contenido */
@@ -57,7 +58,7 @@ body {
 /* Bloque izquierdo */
 .hero-left h1 {
   font-size: 3rem;
-  color: #00ffff;
+  color: #61befc;
   font-weight: 700;
 }
 
@@ -70,7 +71,7 @@ body {
 .hero-left button {
   margin-top: 25px;
   padding: 12px 28px;
-  background: #00ffff;
+  background: #61befc;
   color: #000;
   border: none;
   border-radius: 8px;
@@ -80,7 +81,8 @@ body {
 }
 
 .hero-left button:hover {
-  background: #00d6d6;
+  background: #0e2f55;
+  color: #ccc;
 }
 
 /* Bloque derecho */
@@ -91,7 +93,7 @@ body {
 .hero-right img {
   max-width: 100%;
   border-radius: 12px;
-  box-shadow: 0 0 20px #00ffffaa;
+  box-shadow: 0 0 20px #42a4f5aa;
 }
 
 /* Para que la tipografía general del body sea consistente */
@@ -304,6 +306,22 @@ section {
 }
 
 
+/* ESTILOS DE SERVICIOS WEB */
+
+.inicio-web {
+  align-items: center;
+  padding: 80px 50px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.inicio-web h1{
+  font-size: 3rem;
+  color: #61d8fc;
+  font-weight: 700;
+}
+
 
 /* Fondo animadoo*/
 
@@ -355,4 +373,3 @@ section {
     0%, 100% { opacity: 0; }
     50% { opacity: 1; }
 }
-

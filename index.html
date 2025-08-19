@@ -15,7 +15,60 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
+<!-- Borrar el style aqui -->
 <style>
+
+.custom-navbar {
+  background-color: transparent !important;
+  border-bottom: 1px solid #61befc; /* línea inferior cyan translúcida */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+  z-index: 1030;
+}
+
+.custom-navbar .navbar-brand {
+  color: #61befc;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #61befc;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  color: #61befc;
+  font-weight: 700;
+}
+
+.hero-left button {
+  margin-top: 25px;
+  padding: 12px 28px;
+  background: #61befc;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-left button:hover {
+  background: #0e2f55;
+  color: #ccc;
+}
+
+.hero-right img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #42a4f5aa;
+}
 
 </style>
 </head>
@@ -71,7 +124,7 @@
       <div class="row align-items-center">
         <!-- Izquierda -->
         <div class="col-12 col-md-6 hero-left">
-          <h1 data-aos="fade-right" data-aos-delay="300">Impulsa tu negocio con una página web profesional</h1>
+          <h1 data-aos="fade-right" data-aos-delay="300">IMPULSA TU NEGOCIO CON UNA PÁGINA WEB PROFESIONAL</h1>
           <p data-aos="fade-right" data-aos-delay="700">Creamos sitios modernos, rápidos y adaptados a tus necesidades. Sin complicaciones ni costos exagerados.</p>
           <button data-aos="fade-right" data-aos-delay="1100" class="btn-tech mt-3">Solicita la tuya</button>
         </div>
