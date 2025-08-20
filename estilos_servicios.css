@@ -1,0 +1,179 @@
+.custom-navbar {
+  background-color: transparent !important;
+  border-bottom: 1px solid #61befc; /* línea inferior cyan translúcida */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+  z-index: 1030;
+}
+
+.custom-navbar .navbar-brand {
+  color: #61befc;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-navbar .navbar-brand img {
+  filter: drop-shadow(0 0 5px #00ffff73);
+}
+
+.custom-navbar .nav-link {
+  color: #ccc;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #61befc;
+}
+
+/* Navbar fijo arriba, para que no tape contenido */
+body {
+  padding-top: 70px; /* espacio para navbar fixed */
+  
+}
+
+/* Para fondo oscuro cuando haces scroll (opcional) */
+.custom-navbar.scrolled {
+  background-color: rgba(14, 14, 14, 0.85) !important;
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(rgb(17, 21, 26), rgb(2, 13, 22));
+      color: white;
+      scroll-behavior: smooth;
+    }
+    .custom-navbar {
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(10px);
+    }
+    .inicio-web {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: url('image/fondo1-tuweb.jpg') no-repeat center center/cover;
+      position: relative;
+      overflow: hidden;
+      margin-top: -70px;
+    }
+    .inicio-web h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #00e0ff;
+      text-shadow: 0px 0px 15px #00e0ff;
+    }
+    .btn-principal {
+      background: #00e0ff;
+      border: none;
+      padding: 12px 25px;
+      font-weight: bold;
+      border-radius: 50px;
+      transition: 0.3s;
+      color: black;
+    }
+    .btn-principal:hover {
+      background: #00c4d6;
+      color: white;
+    }
+
+    #importancia {
+  background: linear-gradient(135deg, #0d1117, #1f2937);
+  border-top: 2px solid #00e0ff33;
+  border-bottom: 2px solid #00e0ff33;
+}
+#importancia h2 {
+  margin-top: 20px;
+  color: #00e0ff;
+  font-weight: bold;
+  font-size: 2.3rem;
+  text-shadow: 0px 0px 10px #00e0ff55;
+}
+
+    /* Sección Que Ofrecemos */
+    
+#que-ofrecemos h2 {
+  margin-top: 20px;
+  color: #00e0ff;
+  font-weight: bold;
+  font-size: 2.3rem;
+  text-shadow: 0px 0px 10px #00e0ff55; 
+}
+
+.futuristic-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 224, 255, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 0 20px rgba(0, 224, 255, 0.1);
+  transition: all 0.4s ease;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.futuristic-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0,224,255,0.1) 0%, transparent 70%);
+  transform: rotate(25deg);
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+.futuristic-card:hover::before {
+  opacity: 1;
+}
+
+.futuristic-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 25px rgba(0, 224, 255, 0.4);
+  border-color: rgba(0, 224, 255, 0.7);
+}
+
+    
+    /* Beneficios */
+    .icon-box {
+      background: #1f2937;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .icon-box i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #00e0ff;
+    }
+    .icon-box:hover {
+      background: #00e0ff22;
+      transform: scale(1.05);
+    }
+    /* Contacto */
+    #contacto {
+      background: #111827;
+      padding: 50px 20px;
+      border-top: 2px solid #00e0ff44;
+    }
+    .form-control, .btn {
+      border-radius: 10px;
+    }
+    footer {
+      background: #0d1117;
+      padding: 20px;
+      text-align: center;
+      border-top: 1px solid #222;
+      color: #aaa;
+    }
