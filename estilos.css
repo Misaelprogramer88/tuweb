@@ -39,13 +39,11 @@ body {
   
 }
 
-/* Para fondo oscuro cuando haces scroll (opcional) */
 .custom-navbar.scrolled {
   background-color: rgba(14, 14, 14, 0.85) !important;
   backdrop-filter: saturate(180%) blur(10px);
 }
 
-/* Estilos para la sección hero */
 .hero {
   min-height: 100vh;
   display: flex;
