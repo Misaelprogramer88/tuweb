@@ -13,8 +13,37 @@
   <link rel="icon" href="image/TuWeb Logo.png" type="image/x-icon">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <style>
-    
+  <style> /*borrar después */
+    p {
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+  line-height: 1.75;
+  color: #eaeef2;             /* texto claro sobre fondo oscuro */
+  margin: 0 0 1rem 0;
+  max-width: 68ch;            /* ancho óptimo de lectura */
+  text-wrap: pretty;          /* mejor quiebre de línea */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 640px) { p { max-width: none; } }
+
+ul {
+  list-style: none;    /* Quita las viñetas */
+  padding: 0;          /* Elimina sangría izquierda */
+  margin: 0;           /* Opcional, para resetear márgenes */
+}
+
+li {
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+  line-height: 1.75;
+}
+
+i {
+    color: #00f5ff;
+    margin-right: 10px;
+}
   </style>
 </head>
 <body>
@@ -50,71 +79,58 @@
 <!-- Importancia de una página web -->
 <section id="importancia" class="py-5 text-light">
   <div class="container">
-    <h2 class="text-center mb-5" data-aos="fade-up">¿Por qué una página web es <br>esencial para tu negocio?</h2>
+    <h2 class="text-center mb-5" data-aos="fade-up">¿Por qué es importante <br>la publicidad en tu negocio?</h2>
     
     <div class="row align-items-center">
       <!-- Imagen ilustrativa / visual tecnológica -->
       <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
-        <img src="image/diseño web-1.jpg" alt="Negocio Digital" class="img-fluid rounded-3 shadow-lg">
+        <img src="image/tuweb-marketing1.jpg" alt="Negocio Digital" class="img-fluid rounded-3 shadow-lg">
       </div>
 
       <!-- Texto con íconos -->
       <div class="col-md-6" data-aos="fade-left">
-        <div class="mb-4 d-flex align-items-start" style="margin-left: 20px;">
-          <i class="bi bi-globe2 fs-2 text-info me-3"></i>
-          <div>
-            <h5>Presencia Global</h5>
-            <p>Una página web permite que tu negocio esté disponible 24/7 en todo el mundo.</p>
-          </div>
-        </div>
-        
-        <div class="mb-4 d-flex align-items-start" style="margin-left: 20px;">
-          <i class="bi bi-graph-up-arrow fs-2 text-warning me-3"></i>
-          <div>
-            <h5>Más Clientes</h5>
-            <p>Incrementa tus oportunidades de venta al llegar a nuevos mercados.</p>
-          </div>
-        </div>
+        <p>Un buen diseño publicitario puede ser la diferencia entre que tu marca pase desapercibida o que logre destacar frente a la   competencia. <br> La publicidad visual no solo vende un producto o servicio: crea emociones, transmite confianza y genera conexión con tus clientes. <br><br>
 
-        <div class="mb-4 d-flex align-items-start" style="margin-left: 20px;">
-          <i class="bi bi-phone fs-2 text-success me-3"></i>
-          <div>
-            <h5>Acceso desde cualquier dispositivo</h5>
-            <p>Tus clientes pueden encontrarte fácilmente desde su celular, tablet o computadora.</p>
-          </div>
-        </div>
-
-        <div class="mb-4 d-flex align-items-start" style="margin-left: 20px;">
-          <i class="bi bi-lightbulb fs-2 text-primary me-3"></i>
-          <div>
-            <h5>Credibilidad</h5>
-            <p>Una página web profesional transmite confianza y seriedad a tus clientes.</p>
-          </div>
-        </div>
+        En TuWeb entendemos la importancia de esta primera impresión, por eso diseñamos:
+        <ul>
+            <li> 
+                <i class="bi-palette"></i>  Banners llamativos que se adaptan a páginas web, tiendas en línea y campañas digitales.
+            </li>
+            
+            <li>
+                <i class="bi-palette"></i>  Imágenes estratégicas para redes sociales, pensadas para captar la atención en los primeros segundos de visualización.
+            </li>
+            
+            <li> 
+                <i class="bi-palette"></i>  Videos publicitarios dinámicos, ideales para campañas de alto impacto, presentaciones o anuncios en plataformas digitales.
+            </li>
+          
+        </ul> 
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="que-ofrecemos" class="py-5">
+<section id="que-ofrecemos-mkt" class="py-5">
   <div class="container">
     <h2 class="text-center mb-5" data-aos="fade-up">¿Qué ofrece <br> TuWeb?</h2>
     <div class="row g-4">
       <div class="col-md-4" data-aos="zoom-in">
         <div class="card futuristic-card p-4 text-center">
-          <h5 class="mt-2"><strong>Diseño Web Moderno</strong></h5> <br>
-          <p>Interfaces atractivas, con un estilo único y adaptables a cualquier dispositivo.</p>
+          <h5 class="mt-2"><strong>Imágenes Publicitarias </strong></h5> <br>
+          <p>Diseños optimizados para Instagram, Facebook, TikTok y más.</p>
         </div>
       </div>
       <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
         <div class="card futuristic-card p-4 text-center">
-          <h5 class="mt-2"><strong>Velocidad Optimizada</strong></h5> <br>
-          <p>Sitios rápidos, ligeros y preparados para destacar en buscadores. <br><br></p>
+          <h5 class="mt-2"><strong>Banners Profesionales</strong></h5> <br>
+          <p>Ideales para páginas web, campañas digitales o anuncios pagos. <br></p>
         </div>
       </div>
       <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
         <div class="card futuristic-card p-4 text-center">
-          <h5 class="mt-2"><strong>Seguridad Avanzada</strong></h5> <br>
+          <h5 class="mt-2"><strong>Videos Promocionales</strong></h5> <br>
           <p>Protección contra amenazas y hosting confiable para tu tranquilidad.</p>
         </div>
       </div>
@@ -123,35 +139,42 @@
 </section>
 
 
-<section id="portafolio" class="py-5">
+<section id="ejemplos-publicidad" class="py-5">
   <div class="container">
-    <h2 class="text-center mb-5" data-aos="fade-up">Nuestros Trabajos</h2>
+    <h2 class="text-center  mb-5" data-aos="fade-up">
+      Ejemplos de Publicidad
+    </h2>
     <div class="row g-4">
-      
+
+      <!-- Ejemplo 1: Imagen publicitaria -->
       <div class="col-md-6" data-aos="zoom-in">
-        <div class="portfolio-card">
-          <img src="image/ejemplo1.png" class="img-fluid project-img" alt="Ejemplo Web 1">
-          <div class="portfolio-content">
-            <h5>Tienda Online</h5>
-            <p>Una plataforma de e-commerce con carrito de compras y diseño adaptable.</p>
-            <a href="https://tuweb.com/ejemplo1" target="_blank" class="btn-futuristic">Ver Página</a>
+        <div class="project-card">
+          <img src="img/banner1.jpg" alt="Ejemplo Banner" class="project-img">
+          <div class="project-overlay">
+            <h5>Banner Promocional</h5>
+            <p>Diseño para una campaña de descuentos de temporada.</p>
+            <a href="img/banner1.jpg" target="_blank" class="btn btn-outline-light">Ver Imagen</a>
           </div>
         </div>
       </div>
 
+      <!-- Ejemplo 2: Video publicitario -->
       <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
-        <div class="portfolio-card">
-          <img src="image/ejemplo2.png" class="img-fluid project-img" alt="Ejemplo Web 2">
-          <div class="portfolio-content">
-            <h5>Restaurante</h5>
-            <p>Sitio web para un restaurante, con menú interactivo y sistema de reservaciones.</p>
-            <a href="https://tuweb.com/ejemplo2" target="_blank" class="btn-futuristic">Ver Página</a>
+        <div class="project-card">
+          <img src="img/video1-thumbnail.jpg" alt="Ejemplo Video" class="project-img">
+          <div class="project-overlay">
+            <h5>Video Publicitario</h5>
+            <p>Spot corto para redes sociales de un restaurante local.</p>
+            <a href="https://www.youtube.com/watch?v=xxxx" target="_blank" class="btn btn-outline-light">▶ Ver Video</a>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
+
 
 <section id="contacto" class="py-5 text-center text-light">
   <div class="container">
